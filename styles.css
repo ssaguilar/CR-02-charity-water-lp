@@ -64,6 +64,18 @@ section {
   margin-right: 750px;
 }
 
+.hero h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: -150px;
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;color: #ffffff; /* Primary white */
+  position: absolute;
+  bottom: .70px;
+  left: 10px;
+  margin-left: 1100px;
+}
+
 
 /* Style the subheadline */
 .hero p {
@@ -74,16 +86,54 @@ section {
   position: absolute;
   bottom: .99px;
   left: 30px;
-  margin-right: 900px;
+  margin-right: 950px;
+
+}
+.hero p2 {
+  font-size: 0.65em;
+  letter-spacing: 1px;
+  margin-bottom: -170px;
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;color: #ffffff; /* Primary white */
+  position: absolute;
+  bottom: .70px;
+  left: 30px;
+  margin-left: 1000px;
 
 }
 
-/* Story Section Styles */
-.story {
-  background-color: #8BD1CB; /* Secondary Light Blue */
-  color: #222;
-  text-align: center;
-  padding: 30px 20px;
+.hero .donate-button {
+  position: absolute;
+  bottom: .99px;
+  left: 30px;
+  margin-right: 950px;
+  margin-bottom: -150px;
+}
+
+.hero .newsletter-button {
+  position: absolute;
+  bottom: .99px;
+  left: 30px;
+  margin-left: 1250px;
+  margin-bottom: -240px;
+  display: inline-block;
+  background-color: #003366; /* Dark Blue */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 18px;
+  box-shadow: 0 2px 8px rgba(79, 203, 83, 0.10);
+  transition: background 0.3s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+/* Change button color when hovered */
+.newsletter-button:hover {
+  background-color: #8BD1CB; /* blue */
+  transform: translateY(-2px) scale(1.04); /* Slight lift */
 }
 
 /* Add accent color to section headings */
@@ -113,7 +163,7 @@ h2 {
 /* Donate Button Styles */
 .donate-button {
   display: inline-block;
-  background-color: #FFC907; /* Yellow */
+  background-color: #ffc907; /* Yellow */
   color: #fff;
   padding: 14px 35px;
   text-decoration: none;
@@ -127,6 +177,20 @@ h2 {
   cursor: pointer;
 }
 
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 20%;
+  max-width: 400px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: .99px;
+  left: 30px;
+  margin-left: 950px;
+  margin-bottom: -240px
+}
 /* Change button color when hovered */
 .donate-button:hover {
   background-color: #2e9df7; /* blue */

@@ -43,37 +43,39 @@ section {
 
 /* Hero Section Styles */
 .hero {
-  position: relative; /* Needed for overlay */
-  /* Set a background image that covers the whole section */
-  background-image: url('https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzLzc3MTZkODA0OGMxNDIzYTVjODQzYmU3NGFiZDI5MDQ1M2EyNWMxNWJlZGZlOGRjODQwNTYxMzAyMmJjZWNmY2EvcHJldmlldy9NYWxhd2lfMjAyM19DRy0zMTA4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfH19');
-  background-size: cover;      /* Make the image cover the whole area */
-  background-position: center; /* Center the image */
+  background-image: url('https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzLzc3MTZkODA0OGMxNDIzYTVjODQzYmU3NGFiZDI5MDQ1M2EyNWMxNWJlZGZlOGRjODQwNTYxMzAyMmJjZWNmY2EvcHJldmlldy9NYWxhd2lfMjAyM19DRy0zMTA4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfX19');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  color: #ffffff;                 /* White text for contrast */
-  text-align: center;          /* Center the text */
-  padding: 60px 20px;          /* Add space above and below */
-  border-radius: 0 0 16px 16px; /* Only round bottom corners */
-
-  /* Add a dark overlay for better text readability */
-  /* This uses a simple linear-gradient overlay */
-  background-blend-mode: darken;
-  background-color: rgba(0, 0, 0, 0.523); /* Blue overlay */
+  height: 100vh; /* full viewport height */
+  margin: 0;
 }
 
 /* Make the headline bold and modern */
 .hero h1 {
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 15px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
+  margin-bottom: 60px;
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;color: #ffffff; /* Primary white */
+  position: absolute;
+  bottom: .70px;
+  left: 30px;
+  margin-right: 750px;
 }
+
 
 /* Style the subheadline */
 .hero p {
   font-size: 1.2em;
-  margin-top: 0;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+  color: #ffffff; /* Primary white */
+  margin-bottom: -50px;
+  position: absolute;
+  bottom: .99px;
+  left: 30px;
+  margin-right: 900px;
+
 }
 
 /* Story Section Styles */

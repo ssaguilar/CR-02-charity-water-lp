@@ -73,7 +73,7 @@ section {
   position: absolute;
   bottom: .70px;
   left: 10px;
-  margin-left: 1100px;
+  margin-left: 1050px;
 }
 
 
@@ -86,7 +86,7 @@ section {
   position: absolute;
   bottom: .99px;
   left: 30px;
-  margin-right: 950px;
+  margin-right: 930px;
 
 }
 .hero p2 {
@@ -97,16 +97,81 @@ section {
   position: absolute;
   bottom: .70px;
   left: 30px;
-  margin-left: 1000px;
+  margin-left: 960px;
 
 }
+
+.donation-amounts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+  position: absolute;
+  bottom: .79px;
+  left: 30px;
+  margin-right: 950px;
+  margin-bottom: -190px;
+}
+
+.amount-btn {
+  padding: 10px 20px;
+  border: 2px solid #4caf50;
+  background-color: white;
+  color: #4caf50;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.amount-btn:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+  .custom-amount {
+  padding: 10px 20px;
+  border: 2px solid #4caf50;
+  background-color: white;
+  color: #4caf50;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.custom-amount:hover {
+  background-color: #4caf50;
+  color: white;
+} 
+
+.donation-type {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.donation-btn {
+  padding: 5px 20px;
+  border: 1px solid #4caf50;
+  background-color: white;
+  color: #4caf50;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.donation-btn:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
 
 .hero .donate-button {
   position: absolute;
   bottom: .99px;
   left: 30px;
   margin-right: 950px;
-  margin-bottom: -150px;
+  margin-bottom: -250px;
+
 }
 
 .hero .newsletter-button {
@@ -116,7 +181,7 @@ section {
   margin-left: 1250px;
   margin-bottom: -240px;
   display: inline-block;
-  background-color: #003366; /* Dark Blue */
+  background-color: #003366; /* Primary dark blue */
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -189,8 +254,15 @@ input, textarea {
   bottom: .99px;
   left: 30px;
   margin-left: 950px;
-  margin-bottom: -240px
+  margin-bottom: -240px;
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;color: #ffffff; /* Primary white */
 }
+
+input, textarea {
+  background-color: #cbccd1; /* Light grey */
+}
+
+
 /* Change button color when hovered */
 .donate-button:hover {
   background-color: #2e9df7; /* blue */

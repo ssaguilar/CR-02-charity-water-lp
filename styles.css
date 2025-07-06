@@ -45,7 +45,7 @@ section {
 .hero {
   position: relative; /* Needed for overlay */
   /* Set a background image that covers the whole section */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+  background-image: url('https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzLzc3MTZkODA0OGMxNDIzYTVjODQzYmU3NGFiZDI5MDQ1M2EyNWMxNWJlZGZlOGRjODQwNTYxMzAyMmJjZWNmY2EvcHJldmlldy9NYWxhd2lfMjAyM19DRy0zMTA4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfH19');
   background-size: cover;      /* Make the image cover the whole area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
@@ -111,9 +111,9 @@ h2 {
 /* Donate Button Styles */
 .donate-button {
   display: inline-block;
-  background-color: #4FCB53; /* Green */
+  background-color: #FFC907; /* Yellow */
   color: #fff;
-  padding: 14px 32px;
+  padding: 14px 35px;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
@@ -127,13 +127,116 @@ h2 {
 
 /* Change button color when hovered */
 .donate-button:hover {
-  background-color: #159A48; /* Dark Green */
+  background-color: #2e9df7; /* blue */
   transform: translateY(-2px) scale(1.04); /* Slight lift */
 }
 
 /* Add some spacing between sections */
 section {
   margin-bottom: 20px;
+}
+
+/* Navigation Bar Styles */
+.navigator-headline {
+  background: #fff; /* White background for the navbar */
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft shadow for separation */
+  padding: 0; /* Remove default padding */
+  margin-bottom: 0; /* No extra space below */
+}
+
+/* Flexbox for horizontal layout of logo, menu, and button */
+.nav-menu {
+  display: flex;                /* Arrange children in a row */
+  align-items: center;          /* Vertically center items */
+  justify-content: space-between; /* Space between logo/menu and donate button */
+  max-width: 1100px;            /* Limit width for large screens */
+  margin: 0 auto;               /* Center the navbar */
+  padding: 10px 18px;           /* Space inside the navbar */
+}
+
+/* Logo image styling */
+.nav-logo {
+  height: 44px;                 /* Set logo height */
+  width: auto;                  /* Keep aspect ratio */
+  margin-right: 8px;           /* Space between logo and menu */
+  vertical-align: middle;       /* Align with menu items */
+}
+
+/* Make the logo larger and more visible */
+.nav-logo.nav-logo-large {
+  height: 210px;         /* Bigger logo for visibility */
+  width: auto;
+  margin-right: 8px;   /* Space between logo and menu */
+}
+
+/* Navigation links styling */
+.nav-links {
+  list-style: none;             /* Remove bullet points */
+  display: flex;                /* Arrange links in a row */
+  gap: 18px;                    /* Space between links */
+  margin: 0;                    /* Remove default margin */
+  padding: 0;                   /* Remove default padding */
+  flex: 1;                      /* Take up available space */
+  align-items: center;          /* Vertically center links */
+}
+
+/* Each navigation link */
+.nav-links li a {
+  color: #000000;               /* Primary blue color */
+  text-decoration: none;        /* Remove underline */
+  font-weight: normal;          /* Not bold */
+  font-size: 1em;               /* Normal size */
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif; /* Use family fonts */
+  padding: 6px 10px;            /* Space around text */
+  border-radius: 4px;           /* Rounded corners on hover */
+  transition: background 0.2s;
+}
+
+/* Highlight link on hover */
+.nav-links li a:hover {
+  background: #FFC907;          /* Light background on hover */
+}
+
+/* Donate button in navbar */
+.nav-donate {
+  margin-left: 24px;            /* Space between menu and donate button */
+  padding: 10px 22px;           /* Slightly smaller padding for navbar */
+  font-size: 1em;
+  vertical-align: middle;       /* Center donate button vertically with icon */
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif; /* Use family fonts */
+}
+
+/* Extra icon image next to the donate button */
+.nav-extra-icon {
+  height: 40px;         /* Same height as donate button */
+  width: auto;          /* Keep aspect ratio */
+  margin-left: 10px;    /* Space between button and icon */
+  vertical-align: middle; /* Center icon vertically with donate button */
+}
+
+/* Responsive navigation: stack items on small screens */
+@media (max-width: 700px) {
+  .nav-menu {
+    flex-direction: column;     /* Stack logo, menu, and button vertically */
+    align-items: flex-start;    /* Align items to the left */
+    padding: 10px 8px;
+  }
+  .nav-logo {
+    margin-bottom: 8px;
+    margin-right: 0;
+    height: 36px;
+  }
+  .nav-links {
+    flex-direction: column;     /* Stack links vertically */
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .nav-donate {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* 

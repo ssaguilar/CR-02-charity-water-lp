@@ -4,22 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charity Water Landing Page</title>
+    <!-- Link to the CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
+    <!-- Navigator Headline Section: This is the top navigation bar -->
+    <section class="navigator-headline">
+        <!-- Navigation container -->
+        <nav class="nav-menu">
+            <!-- Logo image for Charity: Water (local file), now larger and to the left of the menu -->
+            <img src="img/Charity-logo.png" alt="Charity: Water Logo" class="nav-logo nav-logo-large">
+            <!-- Navigation menu items -->
+            <ul class="nav-links">
+                <li><a href="#">TAKE ACTION</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">WHY WATER?</a></li>
+                <li><a href="#">PROJECT UPDATES</a></li>
+                <li><a href="#">SIGN IN</a></li>
+            </ul>
+            <!-- Donate button on the right -->
+            <a href="#" class="donate-button nav-donate">DONATE 💧</a>
+            <!-- Icon image to the right of the donate button -->
+            <img src="img/icon8.png" alt="Extra Icon" class="nav-extra-icon">
+        </nav>
     </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
+    <!-- Hero Section: This is the main banner at the top of the page -->
+    <section class="hero">
+        <!-- Main headline, centered by CSS -->
+        <h1>Clean Water for Everyone</h1>
+        <!-- Subheadline, also centered -->
+        <p>Join us in bringing safe, clean water to communities in need.</p>
+        <!--
+          The background image is set in CSS for the .hero class.
+          This makes the section full-width and visually appealing.
+        -->
     </section>
 
     <!-- Real-World Impact Story Section -->
@@ -28,19 +47,32 @@
         <h2>Real Impact: Meet Amina</h2>
         <!-- Container for image and text -->
         <div class="impact-content">
-            <!-- Impact image -->
+            <!-- Impact image: shows a real person helped by the charity -->
             <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
+            <!-- Impact story text: tells how donations help -->
             <p>
                 Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
             </p>
         </div>
     </section>
 
+    <!-- Story Section: This tells the story of the nonprofit -->
+    <section class="story">
+        <!-- Section headline -->
+        <h2>Our Story</h2>
+        <!-- Story text: explains the mission of the nonprofit -->
+        <p>
+            We are dedicated to providing clean and safe water to communities around the world. Every donation helps us build wells and change lives.
+        </p>
+    </section>
+
     <!-- Call-to-Action Section: This encourages visitors to take action -->
     <section class="call-to-action">
+        <!-- Section headline -->
         <h2>Make a Difference</h2>
+        <!-- Call-to-action text: motivates visitors to donate -->
         <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
+        <!-- Donate button: stands out and invites users to click -->
         <a href="#" class="donate-button">Donate Now</a>
     </section>
 </body>
